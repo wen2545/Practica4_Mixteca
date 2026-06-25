@@ -3,62 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferretería La Mixteca - Acatlán</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Práctica 4 - Ferretería La Mixteca</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #1b2a4a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .tarjeta {
+            background-color: #ffffff;
+            color: #2c2c2c;
+            border-radius: 8px;
+            max-width: 520px;
+            width: 100%;
+            padding: 35px 30px;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #1b2a4a;
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+        p.desc {
+            color: #555;
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+        .enlaces {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .enlaces a {
+            display: block;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 5px;
+            font-weight: 600;
+            color: #fff;
+            transition: opacity 0.2s ease;
+        }
+        .enlaces a:hover { opacity: 0.85; }
+        .btn-nativo { background-color: #e8702a; }
+        .btn-bootstrap { background-color: #1b2a4a; border: 2px solid #1b2a4a; }
+        footer {
+            margin-top: 25px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
+    <div class="tarjeta">
+        <h1>Práctica 4: Maquetación Web</h1>
+        <p class="desc">Desarrollo Full Stack &mdash; Unidad 2 &mdash; ITSAO</p>
 
-    <header class="encabezado">
-        <h1>Ferretería La Mixteca</h1>
-        <p class="subtitulo">Proyecto de Innovación Digital | TecNM Acatlán de Osorio</p>
+        <div class="enlaces">
+            <a class="btn-nativo" href="nativo/indexDos.html">
+                Ver versión HTML5 + CSS nativo
+            </a>
+            <a class="btn-bootstrap" href="bootstrap/indesBoststrap.html">
+                Ver versión con Bootstrap
+            </a>
+        </div>
 
-        <nav class="navegacion">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#plomeria">Plomería</a></li>
-                <li><a href="#electricidad">Electricidad</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="contenedor-principal" id="inicio">
-
-        <section class="seccion-productos" id="herramientas">
-            <article id="plomeria">
-                <h2>Herramientas Manuales de Alta Resistencia</h2>
-                <p>
-                    Contamos con un amplio surtido en llaves mecánicas, pinzas de presión,
-                    martillos con mango de fibra de vidrio y desatornilladores aislados para
-                    electricista, ideales para los talleres mecánicos y proyectos de
-                    construcción en toda la región de Acatlán de Osorio.
-                </p>
-
-                <h2 id="electricidad">Línea de Plomería y Conexiones PVC / CPVC</h2>
-                <p>
-                    Asegura tus instalaciones hidráulicas con nuestra variedad de tuberías,
-                    codos, niples y pegamento de alta presión. Todo el material cuenta con
-                    certificación de calidad para resistir las condiciones climáticas de la
-                    Mixteca Baja.
-                </p>
-            </article>
-
-            <aside class="info-servicios">
-                <h2>Servicios Ferreteros</h2>
-                <p><strong>Horario:</strong> Lunes a Sábado 7:00 AM - 7:00 PM</p>
-                <p><strong>Ubicación:</strong> Centro de Acatlán de Osorio, Pue.</p>
-                <p>Cotizaciones especiales para contratistas.</p>
-                <p>Servicio de entrega a domicilio.</p>
-            </aside>
-        </section>
-
-    </main>
-
-    <footer class="pie-pagina" id="contacto">
-        <p>© 2026 Ferretería La Mixteca. Todos los derechos reservados.</p>
-        <p>TecNM Campus Acatlán.</p>
-    </footer>
-
+        <footer>Instituto Tecnológico Superior de Acatlán de Osorio</footer>
+    </div>
 </body>
 </html>
