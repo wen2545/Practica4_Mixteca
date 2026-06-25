@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Ferretero - Bootstrap</title>
+
+    <!-- Bootstrap descargado localmente -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .navbar-brand span {
+            color: #e8702a;
+        }
+        .seccion-titulo {
+            background-color: #1b2a4a;
+            color: #ffffff;
+            padding: 50px 0 60px 0;
+        }
+        .card-categoria {
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .badge-herramientas { background-color: #e8702a; }
+        .badge-mecanica { background-color: #1b2a4a; }
+        .badge-electricidad { background-color: #2a7a4a; }
+        footer {
+            background-color: #1b2a4a;
+            color: #c9d2e3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1b2a4a;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">FERRETERÍA <span>LA MIXTECA</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Mostrar/ocultar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#catalogo">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#marcas">Marcas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cotizaciones">Cotizaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== TÍTULO DE SECCIÓN ===== -->
+    <header class="seccion-titulo text-center" id="catalogo">
+        <div class="container">
+            <h1 class="fw-bold">Catálogo Digital de Maquinaria y Suministros</h1>
+            <p class="lead">Módulo de Prácticas de Desarrollo Web - TecNM Acatlán de Osorio</p>
+        </div>
+    </header>
+
+    <!-- ===== CARDS DE PRODUCTOS ===== -->
+    <main class="container my-5" id="marcas">
+        <div class="row g-4">
+
+            <!-- Producto 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-categoria p-3">
+                    <span class="badge badge-herramientas mb-2" style="width: fit-content;">
+                        Herramientas Eléctricas
+                    </span>
+                    <h5 class="card-title fw-bold">Rotomartillo Profesional 1/2"</h5>
+                    <p class="card-text text-muted">
+                        Motor de alta eficiencia ideal para perforaciones demandantes en
+                        concreto, madera y acero. Incluye mango lateral de control y
+                        varilla de profundidad.
+                    </p>
+                    <p class="fw-semibold mb-3">Disponibilidad inmediata</p>
+                    <a href="#" class="btn btn-mt-auto" style="background-color:#e8702a; color:#fff;">
+                        Ver Ficha Técnica
+                    </a>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card card-categoria p-3">
+                    <span class="badge badge-mecanica mb-2" style="width: fit-content;">
+                        Mecánica
+                    </span>
+                    <h5 class="card-title fw-bold">Juego de Llaves Combinadas (12 piezas)</h5>
+                    <p class="card-text text-muted">
+                        Fabricadas en acero al cromo vanadio de alta resistencia al torque.
+                        Medidas estándar impresas en relieve para una rápida identificación
+                        en taller.
+                    </p>
+                    <p class="fw-semibold mb-3">Precio Especial Contratista</p>
+                    <a href="#" class="btn" style="background-color:#1b2a4a; color:#fff;">
+                        Agregar a Cotización
+                    </a>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-12 col-md-6 col-lg-4" id="cotizaciones">
+                <div class="card card-categoria p-3">
+                    <span class="badge badge-electricidad mb-2" style="width: fit-content;">
+                        Electricidad
+                    </span>
+                    <h5 class="card-title fw-bold">Kit de Multímetro Digital y Pinzas</h5>
+                    <p class="card-text text-muted">
+                        Paquete completo para electricistas y mantenimiento industrial.
+                        Multímetro digital con pantalla LCD retroiluminada y pinzas con
+                        aislamiento certificado hasta 1000V.
+                    </p>
+                    <p class="fw-semibold mb-3">Últimas piezas en sucursal</p>
+                    <a href="#" class="btn btn-outline-secondary">
+                        Consultar Existencias
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="text-center py-3">
+        <p class="mb-0">© 2026 - TecNM Acatlán de Osorio</p>
+    </footer>
+
+    <!-- Bootstrap JS (necesario para el menú colapsable en móvil) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
